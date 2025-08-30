@@ -2,7 +2,7 @@
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
-
+Documento de google: https://docs.google.com/document/d/1u7MkA4-LgH85kjfDXtkuWASeIknJe-Sx_1jN9wlRQZ0/edit?usp=sharing
 ## **`Integrante/s`**
 
 - Lucia Caballero Villar 
@@ -42,13 +42,29 @@ Nuestro proyecto consiste de un semaforo inteligente, distinto y evolucionado de
 `Completar una vez definido el proyecto.`
 
 ## **`Etapas del proyecto`**
-### Etapa 1:
-- `Acción 1`
-- `Acción 2`
+### Etapa 1: conectar los 3 semáforos y el display.
+- Conectar todas las leds con sus respectivas resistencias y llevar a cabo el circuito para comprobar que funcionan correctamente junto con el display y que lleve a cabo el conteo correctamente.
 
-### Etapa 2:
-- `Acción 1`
-- `Acción 2`
+### Etapa 2: conectar los sensores de presencia del auto.
+- Conectar los 4 sensores de presencia del auto y programarlos para que cuando detecte el auto en los primeros dos sensores comience un tiempo y al llegar al segundo par de sensores se termine de calcular la velocidad del auto y así determinar si el semáforo se pone en rojo para el auto o no.
+
+### Etapa 3: conectar los sensores de presencia del peatón y los botones.
+- Conectar los 4 sensores de presencia del peatón y programarlos para que cuando haya peatón se comience a calcular la velocidad de los autos para ver si el semáforo se puede poner en rojo para los autos y que el peatón pase o no. 
+- Conectar los dos botones (uno de cada lado de la calle) para que el peatón toque en caso de querer cruzar pero no poder ya que los autos están yendo a más de 30 km/h, encendiendo de esta forma el timer del display.
+
+### Etapa 4: programar situaciones de lo que puede pasar.
+- Sin peatón ni auto detectado, semáforo para autos en verde.
+- Sin peatón con auto detectado, semáforo para autos en verde.
+- Hay peatón sin auto detectado, semáforo para peatón en verde.
+- Hay peatón y auto a menos de 30 km/h, semáforo para peatón en verde.
+- Hay peatón y auto a más de 30 km/h, semáforo para auto en verde.
+- El peatón presiona el botón, se muestra en el display 30 segundos restantes para que pasen los autos y que luego haya semáforo verde para el peatón.
+
+### Etapa 5: conectar todo lo programado.
+- Tras todas las programaciones individuales, es necesario unificarlas todas para comprobar el funcionamiento correcto.
+
+### Etapa 6: pasarlo al prototipo.
+- Comenzar a construir el prototipo en el que llevaremos a cabo todo lo anteriormente hecho, utilizando las LEDs, botones, resistencias, sensores y display. 
 
 ## **`Extras`**
 
