@@ -1,12 +1,12 @@
-# **`Bitácora de (Nombre del Proyecto)`**
+# **Bitácora de Semaforo Inteligente**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
 
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- Lucia Caballero Villar  
+- Malena Rossi
 
 
 ---
