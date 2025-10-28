@@ -1,0 +1,40 @@
+1. ¿Qué tipo de dispositivo es (sensor o actuador)? Explica brevemente su función principal.
+Es un sensor cuya función principal es detectar cambios en la radiación infrarroja emitida por cuerpos calientes en su campo de visión y avisar al Arduino cuando hay movimiento.
+
+2. ¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Entrega una señal digital que queda en HIGH cuando detecta movimiento y en LOW  cuando no detecta.
+
+3. ¿Cuál es el rango de valores que puede entregar o recibir el componente?
+El componente puede entregar valor HIGH cuando hay presencia de movimiento y LOW cuando no la hay.
+
+4. ¿Qué pines de conexión tiene el componente? Enumerar y describir su función.
+El componente suele tener un módulo PIR de 3 pines que pueden ser el VCC, que se conecta a 5 volts, el GND, que se conecta a tierra y el SIG, que es la salida de señal digital que envía la información de detección al Arduino. 
+
+5. ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+En el caso que utilizamos para demostrar cómo se conecta en Tinkercad, utilice el pin 2, 5 volts y GND.
+
+6. Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+7. ¿Cuál es el principio de funcionamiento del componente?
+El principio de funcionamiento del sensor se basa en la detección de radiación infrarroja. En su interior tiene un material sensible al calor que capta los cambios en la cantidad de radiación emitida por los cuerpos. Si el sensor detecta un cambio repentino, genera una señal eléctrica que indica presencia y da una señal HIGH.
+
+8. ¿Utiliza alguna librería particular para programarlo?
+No necesita ninguna librería especial para funcionar, se programa usando digitalRead() para leer si la salida del sensor está en alto o bajo.
+
+9. ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+En el programa, el dato se interpreta como una entrada digital. Si digitalRead() devuelve HIGH, significa que el sensor detectó movimiento, si devuelve LOW, significa que no hay presencia. 
+
+10.¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Hay que tener cuidado con no aplicar tensiones muy altas ni aplicar luz, calor ni viento directo, tener cuidado con conectar invertidos el GND y el 5 Volts.
+
+11. ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Probándolo en un protoboard y en una simulación de tinkercad.
+
+12. Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/5swxTq5CAtb/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits
+
+13. En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Si funciona correctamente, cuando se presencie movimiento la señal será HIGH (1) y cuando no se detecte ningún movimiento LOW (0).
+
+14. ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Las razones por las que puede fallar es porque está mal conectado, hay errores en el código o hasta el sensor puede estar mal calibrado. Entonces, hay que verificar que la salida cambie y varíe entre HIGH y LOW, también hay que revisar las conexiones tanto como la calibración y se puede intentar usar un código simple con el fin de confirmar el buen funcionamiento del componente.
