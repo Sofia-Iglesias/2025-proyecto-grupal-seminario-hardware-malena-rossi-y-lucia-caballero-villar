@@ -1,4 +1,4 @@
-# **`Nombre del Proyecto`**
+# **Semaforo inteligente**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
