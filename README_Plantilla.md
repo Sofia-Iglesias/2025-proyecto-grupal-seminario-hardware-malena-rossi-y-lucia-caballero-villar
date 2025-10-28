@@ -29,7 +29,7 @@ Nuestro proyecto consiste de un semaforo inteligente, distinto y evolucionado de
 - 1 led amarilla output.
 - 1 led verde output.
 - 7 resistencias. (una para cada led)
-- Display 2 digitos 7 segmentos output.
+- Display 7 segmentos output.
 
 
 
