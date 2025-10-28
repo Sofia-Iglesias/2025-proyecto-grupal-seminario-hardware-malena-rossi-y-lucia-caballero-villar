@@ -1,0 +1,40 @@
+1. ¿Qué tipo de dispositivo es (sensor o actuador)? Explica brevemente su función principal
+El display de 7 segmentos es un actuador, porque su función es mostrar información visual transformando señales eléctricas en luz. Está formado por siete LEDs organizados en forma de “8”, y su tarea principal es representar dígitos y algunos caracteres básicos iluminando las combinaciones de segmentos necesarias.
+
+2. ¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El display usa señales digitales por cada led que tiene.
+
+3. ¿Cuál es el rango de valores que puede entregar o recibir el componente?
+El componente en su totalidad está formado por múltiples leds, las cuales reciben la señal de HIGH o LOW, decidiendo de esta forma si están encendidas o no, y permitiendo representar el valor.
+
+4. ¿Qué pines de conexión tiene el componente? Enumerar y describir su función.
+Un display tiene 8 terminales para segmentos (a, b, c, d, e, f, g y DP) y 1 o 2 terminales comunes. 7 de las 8 terminales se conectan junto con una resistencia a distintos pines digitales, y las dos terminales comunes se conectan a GND.
+
+5. ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+En el caso que utilizamos para demostrar cómo se conecta en Tinkercad, los 7 pines los conectamos a los pines digitales 2 a 8, y las terminales comunes a GND.
+
+6. Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+7. ¿Cuál es el principio de funcionamiento del componente?
+El principio de funcionamiento es que cada segmento es un LED independiente, los cuales al aplicarles la polaridad correcta a cada segmento, pasa corriente y emite luz. Combinando el encendido o el apagado de los ocho segmentos se forman las cifras. 
+
+8. ¿Utiliza alguna librería particular para programarlo?
+No es necesario utilizar ninguna librería para su conexión.
+
+9. ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+En el programa la salida se interpreta como un patrón de bits por dígito, cada bit del patrón corresponde a un segmento. Por lo tanto, cada segmento del led responde individualmente al dato que reciba (encendido o apagado).
+
+10.¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Usar resistencias en serie por segmento para limitar la corriente, no exceder la corriente máxima por pin del Arduino, proteger la polaridad y evitar cortocircuitos.
+
+11.¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Probándolo en un protoboard y en una simulación de tinkercad.
+
+12.Simular en Tinkercad e incluir el link de la simulación.
+http://tinkercad.com/things/iQwdPG3GscT/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits
+
+13. En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Si el display 7 segmentos funciona correctamente, se debería mostrar el número indicado según las señales que reciba.
+
+14. ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+El display puede fallar en la representación del número indicado por inconvenientes en los LEDS, como también puede fallar por culpa de la falta de resistencias o una mala conexión en el sistema. Por lo tanto, para detectarlo, hay que revisar que las conexiones, los LEDs y el uso de resistencias sean concretados.
