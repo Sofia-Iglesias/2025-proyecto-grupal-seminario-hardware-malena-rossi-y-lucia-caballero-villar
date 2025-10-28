@@ -1,0 +1,43 @@
+1. ¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Este dispositivo es una entrada. A partir de esto, una vez que se presiona se comenzará un sistema que activa la cuenta regresiva del semáforo (dependiendo del caso).
+
+2. ¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El botón usa señales digitales para comunicarse con el arduino.
+
+3. ¿Cuál es el rango de valores que puede entregar o recibir el componente?
+En Arduino los botones tienen dos estados, 0 y 1. Esto también se puede interpretar como HIGH y LOW, y es una señal digital ya que los estados del botón son solo dos.
+
+4. ¿Qué pines de conexión tiene el componente? Enumerar y describir su función.
+Un pulsador tiene 4 patas, 2 patas por lado conectadas en el mismo lado de la protoboard. Cuando el botón no está presionado, los lados están abiertos pero si se presiona, se conectan se conectan las patas de un lado a otro, cerrando el circuito eléctrico.
+
+5. ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+En el caso que utilizamos para demostrar cómo se conecta en Tinkercad, el pin que utilizamos para conectar al botón es el pin digital 5.
+
+6. Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+
+
+
+7. ¿Cuál es el principio de funcionamiento del componente?
+El principio de funcionamiento del botón es el interruptor mecánico que al presionarlo, dos contactos conductores se ponen en contacto y permite que la corriente fluya entre las dos terminales, al soltarlo, los contactos se separan y el circuito se abre impidiendo así que fluya la corriente. 
+
+8. ¿Utiliza alguna librería particular para programarlo?
+No, para leer un botón no hace falta librería, sino que se usa pinMode(), digitalRead().
+
+9. ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+Como el pin del botón se escribe como INPUT o INPUT_PULLUP, usas digitalRead(pin) para leerlo al dato,que devuelve HIGH (1) o LOW (0).
+
+10. ¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las precauciones a tener en cuenta es el uso de resistencias, las cuales deben ser adecuadas al circuito y que la energía que le esté llegando al botón no sea excesiva.
+
+11. ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+La forma de comprobarlo es mediante un protoboard, simulando en tinkercad.
+
+12. Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/4teYLEH9Haf/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits
+
+13. En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Si funciona correctamente el botón, el valor leído al presionarlo será HIGH (1) y LOW (0) cuando se suelte. Lo podemos esperar ver reflejado en la activación del sistema conectado.
+
+14.¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+El botón podría fallar por conectarlo erróneamente en el protoboard o el arduino, o porque se encuentra dañado internamente y el circuito no cierra al presionarlo. La forma de detectarlo es revisando todas las conexiones, revisando el código o, si el valor no cambia cuando el botón es presionado, revisar el problema interno del mismo componente.
