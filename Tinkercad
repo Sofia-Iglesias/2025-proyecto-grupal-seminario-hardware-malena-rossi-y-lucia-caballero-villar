@@ -1,0 +1,17 @@
+Este es el link al Tinkercad: https://www.tinkercad.com/things/jYQxm26i8xy-semaforo-inteligente/editel
+No es exactamente igual a la idea principal hecha en el README entonces explicaremos nuevamente como está hecha la simulación. 
+       Componentes:
+1. 3 Leds rojas output
+2. 1 Led amarilla output
+3. 1 Led verde output
+4. 2 Leds blancas output
+5. 1 sensor ultrasonico input
+6. 2 botones input
+7. 7 resistencias para las leds 
+
+Explicación de la simulación:
+Para hacer una explicación concreta volveremos a explicarlo mediante casos:
+Caso 1, sin peatón y con autos circulando: en este caso como no hay ningún peaton que presione el boton, la luz verde del semaforo para el auto se verá encendida al igual que las dos leds rojas para los peatones.
+Caso 2, con peatón y autos circulando a lo lejos: como el auto está a una distancia más grande, se concidera como si nisiquiera hubiera auto, por lo que el peaton presiona el pulsador sin problema y, tras 5 segundos, podrá pasar y luego el semaforo volverá a estar en verde para los autos y en rojo para el peatón.
+Caso 3, con peatón y autos acercandose: como el auto se esta acercando, el peatón podrá presionar el boton sin problema pero tendrá que esperar más tiempo para cruzar para darles mayor tiempo de reacción a los autos.
+Caso 4, con peatón y auto cercano: el auto ya se encuentra a una distancia muy cercana, por lo tanto, le dará 9 segundos al auto para poder frenar (más adelante cuando podamo incorporar el display el auto se informará de esta manera que debe frenar) y luego se pondrá en verde para el peatón, y tras cierto tiempo volverá a darle el paso a los autos.
